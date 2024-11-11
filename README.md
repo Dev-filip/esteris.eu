@@ -1,2 +1,1 @@
-# esteris.eu
-Web for my minecraft server
+## Web for my minecraft Esteris.Eu

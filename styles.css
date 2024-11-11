@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-brand img {
-    height: 30px; /* Přizpůsob výšku podle výšky navbaru */
+    height: 30px; 
 }
 .navbar {
     width: 100%;
@@ -33,7 +33,7 @@ footer {
 }
 
 .header-background {
-    background-image: url('https://cdn.discordapp.com/attachments/1221123386457980998/1305582104465113138/background.png?ex=67338d96&is=67323c16&hm=986c15fb67eac731a85c2bb1bb2177c716fe2923a386b0c9eb14ece64cd45fa9&');
+    background-image: url('background.png');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -45,8 +45,12 @@ footer {
 }
 
 .header-logo {
-    max-height: 35px; /* Adjust as needed */
+    max-height: 35px; 
     align-self: flex-start;
-    margin-top: 35px; /* Move the logo 35px lower */
+    margin-top: 35px; 
     margin-left: 20px;
+}
+
+a {
+
 }

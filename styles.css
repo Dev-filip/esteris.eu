@@ -1,11 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar-brand img {
     height: 30px; 
 }
+
 .navbar {
     width: 100%;
     background-color: transparent;
@@ -15,14 +18,35 @@ body {
     position: absolute;
     top: 30px;
 }
+
 .navbar .container-fluid {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 .navbar-header {
     margin-right: 15px;
+    position: absolute;
+    right: 20px; /* Position the logo on the right */
 }
+
+.nav > li > a {
+    font-size: 18px; /* Increase the font size of the navbar text */
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 5px; /* Add margin between buttons */
+    font-family: Arial, sans-serif; /* Set the font to Arial */
+}
+
+.nav > li > a:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -42,11 +66,111 @@ footer {
     align-items: center;
     justify-content: flex-start;
     padding: 0 20px;
+    position: relative;
 }
 
 .header-logo {
     max-height: 35px; 
-    align-self: flex-start;
-    margin-top: 35px; 
-    margin-left: 20px;
+    margin-top: -15px; 
+    margin-right: 900px;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h4 {
+    margin: 0;
+    font-size: 24px;
+    color: blueviolet;
+    font-family: "Exo 2";
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.header-paragraph {
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: translate(0, -50%);
+    width: 300px; /* Adjust width as needed */
+}
+
+.header-paragraph p {
+    font-size: 20px;
+    position: absolute;
+    line-height: 1.5;
+}
+
+.block {
+    height: 50vh; /* Each block takes up 50% of the viewport height */
+    width: 100%;
+}
+
+.black {
+    background-color: black;
+}
+
+.gray {
+    background-color: #040507;
+}
+
+.discord {
+
+    color: blue;
+    font-family: Arial;
+
+}
+
+.discord-logo {
+
+width: 400px;
+margin-left: 1050px;
+
+}
+
+.discord-p {
+
+    color: white;
+    font-family: Arial;
+    margin-top: 50px;
+    position: absolute;
+}
+
+
+.discord-button {
+
+    position: absolute;
+    margin-left: 678px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 2px 16px;
+    height: 32px;
+    min-width: 60px;
+    min-height: 32px;
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease,color .17s ease;
+    :hover {
+        background-color: rgb(71, 82, 196);
+    }
+
+
+
 }

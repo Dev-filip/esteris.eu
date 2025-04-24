@@ -150,6 +150,21 @@ position: absolute;
     position: absolute;
 }
 
+.discord-p ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.discord-p ul li {
+    font-size: 18px; /* Adjust font size for better readability */
+    margin-bottom: 10px; /* Adds spacing between list items */
+    color: white; /* Ensures the text color matches the design */
+    font-family: Arial, sans-serif; /* Sets a clean font */
+    text-align: left; /* Aligns text to the left */
+    padding-left: 10px; /* Adds some padding for better spacing */
+    border-left: 3px solid purple; /* Adds a decorative left border */
+}
 
 .discord-button {
     background: none;
@@ -160,4 +175,51 @@ position: absolute;
     cursor: pointer;
     height: 40px + 2;
     transition: filter 0.3s;
+}
+
+.discord-logo-container {
+    text-align: center;
+    position: relative; 
+    margin-top: -150px; 
+}
+
+.discord-logo {
+    max-width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+.minigames-section {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.minigames-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.minigame-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.minigame-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.minigame-box p {
+    font-size: 16px;
+    line-height: 1.5;
 }
